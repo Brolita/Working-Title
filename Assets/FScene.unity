@@ -370,20 +370,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpriteSetA:
-  - {fileID: 21300000, guid: d2701bb42177147498120f2be87cba08, type: 3}
-  - {fileID: 21300000, guid: 77e7913ec1517ac40b82a5ea924b16cd, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   SpriteSetB:
-  - {fileID: 21300000, guid: 9adb2eb7260f1914e823f0b7e92c0e9e, type: 3}
-  - {fileID: 21300000, guid: d2701bb42177147498120f2be87cba08, type: 3}
-  - {fileID: 21300000, guid: 4f5f693ef5e7e154bb7123bd8a155414, type: 3}
-  - {fileID: 21300000, guid: 2600c3f990e657e4282a66556eb49110, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   SpriteSetC:
-  - {fileID: 21300000, guid: d2701bb42177147498120f2be87cba08, type: 3}
-  - {fileID: 21300000, guid: 77e7913ec1517ac40b82a5ea924b16cd, type: 3}
-  - {fileID: 21300000, guid: f6cd0098fd27e24478912d415582f338, type: 3}
-  - {fileID: 21300000, guid: 9adb2eb7260f1914e823f0b7e92c0e9e, type: 3}
-  - {fileID: 21300000, guid: 2600c3f990e657e4282a66556eb49110, type: 3}
-  - {fileID: 21300000, guid: 4f5f693ef5e7e154bb7123bd8a155414, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   SpriteRock: {fileID: 0}
 --- !u!1 &675136770
 GameObject:
@@ -800,6 +800,7 @@ GameObject:
   - 212: {fileID: 2146166095}
   - 114: {fileID: 2146166096}
   - 114: {fileID: 2146166097}
+  - 95: {fileID: 2146166098}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -868,7 +869,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1881507537
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d2701bb42177147498120f2be87cba08, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 98619c10fe289254887e26220cc790e1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &2146166096
 MonoBehaviour:
@@ -903,5 +904,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 884f2a576e9db4bb5a06312ba6ec2448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  a: {fileID: 0}
   deathTime: 10
   pushBackPerTick: -.100000001
+--- !u!95 &2146166098
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9500000, guid: a218c99f073167e48bb58c4508452f0b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1480277520}
+  m_GameObject: {fileID: 2146166091}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19482148af3eeb24394b9d29dc5595d8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
