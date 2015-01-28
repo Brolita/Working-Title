@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class Death : MonoBehaviour {
-	
+
+	public Animator a;
 	public float deathTime;
 	public float pushBackPerTick;
 	private float timeRemaining;
@@ -10,6 +11,7 @@ public class Death : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		dying = false;
+		a = GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -18,11 +20,13 @@ public class Death : MonoBehaviour {
 		{
 			if (timeRemaining > 0)
 			{
+				a.SetBool("Flinch", true);
 				transform.Translate(pushBackPerTick,0.0f,0.0f);
 				timeRemaining -= 1;
 			}
 			else
 			{
+				a.SetBool("Flinch", false);
 				dying = false;
 				SnailMovement snailMovement = GetComponent<SnailMovement>();
 				snailMovement.canMove = true;

@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -.0822829977, y: .637130022, z: 0}
-  m_LocalScale: {x: .100000001, y: .100000001, z: .100000001}
+  m_LocalScale: {x: 1, y: 1, z: .100000001}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -93,21 +93,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpriteSetA:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: bbfd7b181038f7741838fd1945b30ddc, type: 3}
+  - {fileID: 21300000, guid: 7eca6bc4158476946aefb4a9df53b2ef, type: 3}
   SpriteSetB:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: bbfd7b181038f7741838fd1945b30ddc, type: 3}
+  - {fileID: 21300000, guid: 7eca6bc4158476946aefb4a9df53b2ef, type: 3}
+  - {fileID: 21300000, guid: 400c4a75bbaf90f49bd56cc5b01f823b, type: 3}
+  - {fileID: 21300000, guid: dacb0d884da6ee241a1cb468dc1bd45b, type: 3}
   SpriteSetC:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  SpriteRock: {fileID: 21300000, guid: 68b1df5a66bb8d741a3ea0065a889ff5, type: 3}
+  - {fileID: 21300000, guid: bbfd7b181038f7741838fd1945b30ddc, type: 3}
+  - {fileID: 21300000, guid: 7eca6bc4158476946aefb4a9df53b2ef, type: 3}
+  - {fileID: 21300000, guid: dacb0d884da6ee241a1cb468dc1bd45b, type: 3}
+  - {fileID: 21300000, guid: 400c4a75bbaf90f49bd56cc5b01f823b, type: 3}
+  - {fileID: 21300000, guid: 7903426ae8b00b646b310f7068bf06a5, type: 3}
+  - {fileID: 21300000, guid: 3e76bb83704376040a9d8cd1df128852, type: 3}
+  - {fileID: 21300000, guid: fccf2b0260591f849b5a03ff3889a062, type: 3}
+  SpriteRock: {fileID: 21300000, guid: b65cbbc540967744faaf0f2db3235e6e, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
