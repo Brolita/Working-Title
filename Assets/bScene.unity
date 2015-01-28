@@ -476,6 +476,8 @@ GameObject:
   - 50: {fileID: 2146166093}
   - 61: {fileID: 2146166092}
   - 212: {fileID: 2146166095}
+  - 114: {fileID: 2146166097}
+  - 95: {fileID: 2146166096}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -546,3 +548,39 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d2701bb42177147498120f2be87cba08, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!95 &2146166096
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2146166091}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19482148af3eeb24394b9d29dc5595d8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &2146166097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a218c99f073167e48bb58c4508452f0b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1480277520}
+  m_GameObject: {fileID: 2146166091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb31342c7b5bb048b6921744e6c21e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canMove: 1
+  a: {fileID: 0}
+  maxTimeBetweenPresses: 0
+  forwardKey1: o
+  forwardKey2: p
+  backwardKey1: q
+  backwardKey2: w
+  forwardSpeed: .0450000018
+  backwardSpeed: .0549999997

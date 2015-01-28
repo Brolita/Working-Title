@@ -7,7 +7,7 @@ public class RockKill : MonoBehaviour
 	{
 		if(other.tag == "Player")
 		{
-			//other.GetComponent<Death>().HandelDeath();
+			other.GetComponent<Death>().HandleDeath();
 			Destroy(gameObject);
 		}
 	}

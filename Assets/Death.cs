@@ -4,7 +4,8 @@ using System.Collections;
 public class Death : MonoBehaviour {
 	
 	public float deathTime;
-	public float timeRemaining;
+	public float pushBackPerTick;
+	private float timeRemaining;
 	private bool dying;
 	// Use this for initialization
 	void Start () {
@@ -17,14 +18,14 @@ public class Death : MonoBehaviour {
 		{
 			if (timeRemaining > 0)
 			{
-				transform.Translate(-0.1f,0.0f,0.0f);
+				transform.Translate(pushBackPerTick,0.0f,0.0f);
 				timeRemaining -= 1;
 			}
 			else
 			{
 				dying = false;
-				//SnailMovement snailMovement = GetComponent<SnailMovement>();
-				//snailMovement.canMove = true;
+				SnailMovement snailMovement = GetComponent<SnailMovement>();
+				snailMovement.canMove = true;
 				
 			}
 		}
@@ -34,8 +35,8 @@ public class Death : MonoBehaviour {
 	{
 		dying = true;
 		timeRemaining = deathTime;
-		//SnailMovement snailMovement = GetComponent<SnailMovement>();
-		//snailMovement.canMove = false;
+		SnailMovement snailMovement = GetComponent<SnailMovement>();
+		snailMovement.canMove = false;
 		transform.Translate(-1.0f,0.0f,0.0f);
 		Debug.Log("hi");
 	}
