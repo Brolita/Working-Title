@@ -69,12 +69,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canMove: 1
-  forwardKey1: m
-  forwardKey2: 
-  backwardKey1: z
-  backwardKey2: 
+  forwardKey1: o
+  forwardKey2: p
+  backwardKey1: q
+  backwardKey2: w
   forwardSpeed: .0250000004
-  backwardSpeed: .0250000004
+  backwardSpeed: .0350000001
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
