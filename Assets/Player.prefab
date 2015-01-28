@@ -73,8 +73,8 @@ MonoBehaviour:
   forwardKey2: p
   backwardKey1: q
   backwardKey2: w
-  forwardSpeed: .0250000004
-  backwardSpeed: .0350000001
+  forwardSpeed: .0450000018
+  backwardSpeed: .0549999997
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
