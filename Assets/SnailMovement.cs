@@ -50,7 +50,7 @@ public class SnailMovement : MonoBehaviour
 			else if(Input.GetKeyUp(backwardKey1))
 			{
 				a.SetBool("IsWalkingBack", true);
-				isWalkingBack = false;
+				isWalkingBack = true;
 				hasBeenWalkingBack = 0f;
 				transform.Translate(-backwardSpeed,0f,0f);
 			}
