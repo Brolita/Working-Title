@@ -31,6 +31,12 @@ public class SnailMovement : MonoBehaviour
 	}
 	void Update () 
 	{
+		if (transform.position.x > 9) {
+			Application.OpenURL ("http://www.youtube.com/watch?v=rymKmdYmsv0" );
+			Application.Quit ();
+			this.enabled = false;
+		}
+
 		if(canMove)
 		{
 			if(Input.GetKeyUp(forwardKey1))
