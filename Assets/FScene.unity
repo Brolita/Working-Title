@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
@@ -183,16 +184,6 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
 --- !u!223 &100885187
 Canvas:
   m_ObjectHideFlags: 0
@@ -207,7 +198,6 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!1 &193961142
@@ -350,7 +340,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 3, y: 3}
+  m_Size: {x: 1.5, y: 1.5}
   m_Center: {x: 0, y: 0}
 --- !u!50 &197718629
 Rigidbody2D:
@@ -619,6 +609,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1371756431}
+  m_HideIfInvisible: 0
 --- !u!224 &1371756434
 RectTransform:
   m_ObjectHideFlags: 0
@@ -808,6 +799,7 @@ GameObject:
   - 61: {fileID: 2146166092}
   - 212: {fileID: 2146166095}
   - 114: {fileID: 2146166096}
+  - 114: {fileID: 2146166097}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -899,3 +891,17 @@ MonoBehaviour:
   backwardKey2: w
   forwardSpeed: .0450000018
   backwardSpeed: .0549999997
+--- !u!114 &2146166097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: a218c99f073167e48bb58c4508452f0b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1480277520}
+  m_GameObject: {fileID: 2146166091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 884f2a576e9db4bb5a06312ba6ec2448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathTime: 10
+  pushBackPerTick: -.100000001

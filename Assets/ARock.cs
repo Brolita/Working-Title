@@ -4,7 +4,7 @@ using System.Collections;
 public class ARock : MonoBehaviour {
     public Sprite[] SpriteSetA = new Sprite[2];
     public Sprite[] SpriteSetB = new Sprite[4];
-    public Sprite[] SpriteSetC = new Sprite[6];
+    public Sprite[] SpriteSetC = new Sprite[7];
     public Sprite SpriteRock;
 
 	// Use this for initialization
@@ -36,7 +36,7 @@ public class ARock : MonoBehaviour {
                 else
                 {
                     rnd = new System.Random();
-                    index = rnd.Next(0, 6);
+                    index = rnd.Next(0, 7);
                     gameObject.GetComponent<SpriteRenderer>().sprite = SpriteSetC[index];
                 }
             }
