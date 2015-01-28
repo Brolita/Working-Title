@@ -164,7 +164,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 3, y: 3}
+  m_Size: {x: 1.5, y: 1.5}
   m_Center: {x: 0, y: 0}
 --- !u!50 &197718629
 Rigidbody2D:
@@ -193,6 +193,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8855e1662798d49947b35bf3f92a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpriteSetA:
+  - {fileID: 0}
+  - {fileID: 0}
+  SpriteSetB:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  SpriteSetC:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &675136770
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9e6f31f53e5cd5458405379d01ed381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Rock: {fileID: 0}
+  Rock: {fileID: 100000, guid: 46d75d69944bf914bb84646d74409759, type: 2}
   FallingFrequency: 2
 --- !u!4 &675136772
 Transform:
