@@ -27,7 +27,7 @@ public class SnailMovement : MonoBehaviour
 			}
 			else if(Input.GetKeyUp(backwardKey1))
 			{
-				transform.Translate(backwardSpeed,0f,0f);
+				transform.Translate(-backwardSpeed,0f,0f);
 			}
 		}
 	}
