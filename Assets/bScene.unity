@@ -576,8 +576,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canMove: 1
-  a: {fileID: 0}
-  maxTimeBetweenPresses: 0
   forwardKey1: o
   forwardKey2: p
   backwardKey1: q
