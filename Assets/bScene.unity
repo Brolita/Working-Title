@@ -478,6 +478,7 @@ GameObject:
   - 212: {fileID: 2146166095}
   - 114: {fileID: 2146166097}
   - 114: {fileID: 2146166096}
+  - 114: {fileID: 2146166098}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -574,9 +575,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canMove: 1
-  forwardKey1: m
-  forwardKey2: 
-  backwardKey1: z
-  backwardKey2: 
-  forwardSpeed: .0250000004
-  backwardSpeed: .0250000004
+  forwardKey1: o
+  forwardKey2: p
+  backwardKey1: q
+  backwardKey2: w
+  forwardSpeed: .0450000018
+  backwardSpeed: .0549999997
+--- !u!114 &2146166098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2146166091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c94fd638980440818298999a6cad931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
