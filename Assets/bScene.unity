@@ -164,7 +164,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 3, y: 3}
+  m_Size: {x: 1.5, y: 1.5}
   m_Center: {x: 0, y: 0}
 --- !u!50 &197718629
 Rigidbody2D:
@@ -193,6 +193,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8855e1662798d49947b35bf3f92a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpriteSetA:
+  - {fileID: 0}
+  - {fileID: 0}
+  SpriteSetB:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  SpriteSetC:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &675136770
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,6 +475,14 @@ Prefab:
       propertyPath: m_SortingLayerID
       value: 1881507537
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: a218c99f073167e48bb58c4508452f0b, type: 2}
+      propertyPath: deathTime
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: a218c99f073167e48bb58c4508452f0b, type: 2}
+      propertyPath: pushBackPerTick
+      value: -.100000001
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a218c99f073167e48bb58c4508452f0b, type: 2}
   m_RootGameObject: {fileID: 2146166091}
@@ -477,6 +500,7 @@ GameObject:
   - 61: {fileID: 2146166092}
   - 212: {fileID: 2146166095}
   - 114: {fileID: 2146166097}
+  - 114: {fileID: 2146166098}
   - 95: {fileID: 2146166096}
   m_Layer: 0
   m_Name: Player
@@ -584,3 +608,17 @@ MonoBehaviour:
   backwardKey2: w
   forwardSpeed: .0450000018
   backwardSpeed: .0549999997
+--- !u!114 &2146166098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: a218c99f073167e48bb58c4508452f0b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1480277520}
+  m_GameObject: {fileID: 2146166091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 884f2a576e9db4bb5a06312ba6ec2448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathTime: 10
+  pushBackPerTick: -.100000001
