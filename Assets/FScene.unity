@@ -383,6 +383,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9adb2eb7260f1914e823f0b7e92c0e9e, type: 3}
   - {fileID: 21300000, guid: 2600c3f990e657e4282a66556eb49110, type: 3}
   - {fileID: 21300000, guid: 4f5f693ef5e7e154bb7123bd8a155414, type: 3}
+  SpriteRock: {fileID: 0}
 --- !u!1 &675136770
 GameObject:
   m_ObjectHideFlags: 0
