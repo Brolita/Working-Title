@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9469f5d2b0c9240418c6c35852e6167f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  t: 0
   text: {fileID: 1371756432}
   timerStart: 30
   nuke: {fileID: 193961142}
@@ -165,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
@@ -181,16 +183,6 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
 --- !u!223 &100885187
 Canvas:
   m_ObjectHideFlags: 0
@@ -205,7 +197,6 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!1 &193961142
@@ -377,6 +368,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8855e1662798d49947b35bf3f92a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpriteSetA:
+  - {fileID: 21300000, guid: d2701bb42177147498120f2be87cba08, type: 3}
+  - {fileID: 21300000, guid: 77e7913ec1517ac40b82a5ea924b16cd, type: 3}
+  SpriteSetB:
+  - {fileID: 21300000, guid: 9adb2eb7260f1914e823f0b7e92c0e9e, type: 3}
+  - {fileID: 21300000, guid: d2701bb42177147498120f2be87cba08, type: 3}
+  - {fileID: 21300000, guid: 4f5f693ef5e7e154bb7123bd8a155414, type: 3}
+  - {fileID: 21300000, guid: 2600c3f990e657e4282a66556eb49110, type: 3}
+  SpriteSetC:
+  - {fileID: 21300000, guid: d2701bb42177147498120f2be87cba08, type: 3}
+  - {fileID: 21300000, guid: 77e7913ec1517ac40b82a5ea924b16cd, type: 3}
+  - {fileID: 21300000, guid: f6cd0098fd27e24478912d415582f338, type: 3}
+  - {fileID: 21300000, guid: 9adb2eb7260f1914e823f0b7e92c0e9e, type: 3}
+  - {fileID: 21300000, guid: 2600c3f990e657e4282a66556eb49110, type: 3}
+  - {fileID: 21300000, guid: 4f5f693ef5e7e154bb7123bd8a155414, type: 3}
 --- !u!1 &675136770
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,7 +411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rock: {fileID: 100000, guid: 46d75d69944bf914bb84646d74409759, type: 2}
-  FallingFrequency: 10
+  FallingFrequency: 1
 --- !u!4 &675136772
 Transform:
   m_ObjectHideFlags: 0
@@ -601,6 +607,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1371756431}
+  m_HideIfInvisible: 0
 --- !u!224 &1371756434
 RectTransform:
   m_ObjectHideFlags: 0
@@ -810,9 +817,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canMove: 1
-  forwardKey1: m
-  forwardKey2: 
-  backwardKey1: z
-  backwardKey2: 
-  forwardSpeed: .0250000004
-  backwardSpeed: .0250000004
+  a: {fileID: 0}
+  maxTimeBetweenPresses: 0
+  forwardKey1: o
+  forwardKey2: p
+  backwardKey1: q
+  backwardKey2: w
+  forwardSpeed: .0450000018
+  backwardSpeed: .0549999997

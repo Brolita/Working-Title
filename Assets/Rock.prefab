@@ -92,6 +92,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8855e1662798d49947b35bf3f92a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpriteSetA:
+  - {fileID: 0}
+  - {fileID: 0}
+  SpriteSetB:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  SpriteSetC:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -110,7 +125,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 868605817
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e5d33d8dde3801c43982ed48f21b01f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
