@@ -107,6 +107,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  SpriteRock: {fileID: 21300000, guid: 68b1df5a66bb8d741a3ea0065a889ff5, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
