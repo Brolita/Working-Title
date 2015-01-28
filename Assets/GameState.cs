@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class GameState : MonoBehaviour {
 	
-	float t;
+	public float t;
 	public Text text;
 	public float timerStart;
 	
