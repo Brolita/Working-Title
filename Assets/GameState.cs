@@ -12,7 +12,7 @@ public class GameState : MonoBehaviour {
 	public Vector2 nukeStartPos;
 	public Vector2 nukeEndPos;
 	
-	
+	public GameObject s;
 	
 	// Use this for initialization
 	void Start () {
@@ -28,6 +28,11 @@ public class GameState : MonoBehaviour {
 			Application.Quit();
 			this.enabled = false;
 		}
+
+		if (t <= 10f) {
+			s.SetActive(true);
+		}
+
 		
 		text.text = (Mathf.Round (t * 10f) / 10f).ToString();
 		if (Mathf.Round (t) == Mathf.Round (t * 10f) / 10f) {

@@ -18,7 +18,7 @@ public class Death : MonoBehaviour {
 		{
 			if (timeRemaining > 0)
 			{
-				transform.Translate(-0.1f,0.0f,0.0f);
+				transform.Translate(pushBackPerTick,0.0f,0.0f);
 				timeRemaining -= 1;
 			}
 			else
