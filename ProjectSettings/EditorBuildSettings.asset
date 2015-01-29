@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/bScene.unity
+    path: Assets/Scenes/bScene.unity
   - enabled: 1
-    path: Assets/FScene.unity
+    path: Assets/Scenes/QWOP.unity
