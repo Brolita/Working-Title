@@ -35,6 +35,7 @@ public class SnailMovement : MonoBehaviour
 
 			Application.OpenURL ("https://www.youtube.com/watch?v=zFSGhoFlRmY&feature=youtu.be" );
 			Application.Quit ();
+			GameObject.Find("Scripts").GetComponent<GameState>().enabled = false;
 			this.enabled = false;
 		}
 

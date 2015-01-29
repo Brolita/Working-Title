@@ -20,13 +20,13 @@ public class GenerateRock : MonoBehaviour {
 
     void GenerateARock() {
 		float currentTime = GameObject.Find("Scripts").GetComponent<GameState>().t;
-		if (currentTime < 20)
+		if (currentTime > 20)
 		{
 			System.Random rnd = new System.Random();
 			int index = rnd.Next(0, Set1.Length);
 			Instantiate(Set1[index]);
 		}
-		else if(currentTime < 40)
+		else if(currentTime > 10)
 		{
 			System.Random rnd = new System.Random();
 			int index = rnd.Next(0, Set2.Length);
