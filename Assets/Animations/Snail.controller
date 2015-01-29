@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: test
+  m_Name: Snail
   serializedVersion: 2
   m_AnimatorParameters:
   - m_Name: IsWalking
@@ -235,26 +235,26 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110215569}
+      first: {fileID: 0}
       second:
-      - {fileID: 110113645}
+      - {fileID: 110195594}
     data:
-      first: {fileID: 110289745}
+      first: {fileID: 110200000}
       second:
-      - {fileID: 110113806}
+      - {fileID: 110160097}
     data:
       first: {fileID: 110269575}
       second:
       - {fileID: 110100000}
       - {fileID: 110187094}
     data:
-      first: {fileID: 110200000}
+      first: {fileID: 110289745}
       second:
-      - {fileID: 110160097}
+      - {fileID: 110113806}
     data:
-      first: {fileID: 0}
+      first: {fileID: 110215569}
       second:
-      - {fileID: 110195594}
+      - {fileID: 110113645}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 0, y: -180, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
