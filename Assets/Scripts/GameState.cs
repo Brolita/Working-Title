@@ -12,7 +12,7 @@ public class GameState : MonoBehaviour {
 	public Vector2 nukeStartPos;
 	public Vector2 nukeEndPos;
 	
-	public GameObject s;
+	public GameObject NukeSymbol;
 	
 	// Use this for initialization
 	void Start () {
@@ -30,7 +30,7 @@ public class GameState : MonoBehaviour {
 		}
 
 		if (t <= 10f) {
-			s.SetActive(true);
+			NukeSymbol.SetActive(true);
 		}
 
 		
