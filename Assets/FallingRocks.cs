@@ -10,7 +10,7 @@ public class FallingRocks : MonoBehaviour {
 	void Start () 
 	{
 		tr = GetComponent<Transform> ();
-		speed = Random.Range(-.002f, -.004f);
+		speed = Random.Range(-.005f, -.022f);
 	}
 	
 	// Update is called once per frame

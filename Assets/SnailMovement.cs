@@ -31,8 +31,9 @@ public class SnailMovement : MonoBehaviour
 	}
 	void Update () 
 	{
-		if (transform.position.x > 9) {
-			Application.OpenURL ("http://www.youtube.com/watch?v=rymKmdYmsv0" );
+		if (transform.position.x > 5) {
+
+			Application.OpenURL ("https://www.youtube.com/watch?v=zFSGhoFlRmY&feature=youtu.be" );
 			Application.Quit ();
 			this.enabled = false;
 		}
