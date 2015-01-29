@@ -19,7 +19,7 @@ public class GenerateRock : MonoBehaviour {
 	}
 
     void GenerateARock() {
-		float currentTime = GameObject.Find("GameState").GetComponent<GameState>().t;
+		float currentTime = GameObject.Find("Scripts").GetComponent<GameState>().t;
 		if (currentTime < 20)
 		{
 			System.Random rnd = new System.Random();
